@@ -22,6 +22,10 @@ app.use("/projects", projectRoutes);
 // const CONNECTION_URL =
 //   "mongodb+srv://demouser123:demopass123@memories.zwzi5.mongodb.net/Memories?retryWrites=true&w=majority";
 
+app.get("/", (req, res) => {
+  res.send("Hello Tebogo Dube, or others");
+});
+
 //the port in which our application will run on
 //you need dotenv to active eniviroment variables
 const PORT = process.env.PORT || 5000;
